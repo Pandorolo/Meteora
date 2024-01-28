@@ -1,0 +1,85 @@
+:root {
+	--bg-col1:	#111111;
+	--bg-col2:	#222222;
+	--fg:		#FFFFFF;
+	--fx-col: 	#72DEC2;
+	--error:    #FF0000;
+}
+
+::selection {
+	color: var(--bg-col1);
+	background: var(--fx-col);
+}
+
+body {
+    height: 97vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+	color: var(--fg);
+	background: var(--bg-col2);
+}
+
+.meteora-title {
+    width: 20%;   
+    fill: none;
+    margin: 25px;
+}
+
+/* Day cards */
+
+.day-card {
+	width: 250px;
+    height: 400px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+	align-items: center;
+    text-shadow: 2px 2px 2px black;
+}
+
+.days {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.day-card-avg-temp {
+    text-align: center;
+    font-size: 50pt;
+    margin-left: 10pt;
+}
+
+.day-card-avg-temp:after {
+    content: "°";
+}
+
+/* Hourly table */
+
+.hourly-table {
+    margin-top: 15px;
+    border: 2px solid;
+    border-color: var(--bg-col1);
+    font-size: large;
+    text-align: right;
+}
+
+.hourly-table td {
+    border: 2px solid;
+    border-color: var(--bg-col1);
+    padding: 15px;
+}
+
+.hourly-table tr:nth-child(even) {background-color: #111111;}
+
+.hourly-table td img {
+    max-width: 10%;
+    max-height: 10%;
+    display: block;
+}
+
+.table-legend {
+    text-align: center;
+    font-weight: bold;
+}

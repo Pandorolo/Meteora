@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style/style.css">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <title>Meteora</title>
+    </head>
+
+    <body>
+        <!-- Header -->
+        <img src="src/meteora.png" alt="METEORA" class="meteora-title">
+        <input type="search" name="locality" placeholder="Enter a locality..." onchange="askData(this.value)">
+	
+        <!-- Day cards and hourly table -->
+        <h3 id="welcome-text">Weather forecast for: </h3>
+	    <section id="days" class="days"></section>
+        <table id="hourly-table" class="hourly-table"></table>
+
+        <!-- Load the scripts -->
+        <script src="script/script.js"></script>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/p5@1.8.0/lib/p5.js"></script> -->
+        <!-- <script src="script/sketch.js"></script> -->
+        <!-- <script src="script/particle.js"></script> -->
+    </body>
+</html>
